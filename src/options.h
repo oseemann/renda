@@ -3,7 +3,7 @@
 
 #include <QString>
 
-class OptionException { };
+class OptionException {};
 
 class Options {
 public:
@@ -11,7 +11,9 @@ public:
    QString getImageFilename() { return imageFilename; }
    QString getPrintFilename() { return printFilename; }
    QString getUrl() { return url; }
+   static QString usage(void);
 private:
+   void readOptions();
    QString imageFilename;
    QString printFilename;
    QString url;

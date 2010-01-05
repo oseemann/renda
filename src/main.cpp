@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
       RenderApplication app(argc, argv);
       ret = app.run();
    } catch(OptionException e) {
-      std::cout << "OptionException" << std::endl;
+      std::cout << Options::usage().toStdString();
       ret = 1;
    }
    return ret;
