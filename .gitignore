@@ -3,3 +3,4 @@ Makefile.Debug
 Makefile.Release
 bin
 src/debug
+src/release
