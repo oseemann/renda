@@ -1,0 +1,11 @@
+RENDA - A program to render a webpage and save the image to a file
+==================================================================
+
+This directory contains the source code of the renda program to render a
+webpage and save the image to a file.
+
+See the INSTALL file for installation instructions.
+See the COPYING file for copyright information.
+
+Author: Oliver Seemann <os (at) oebs.net>
+

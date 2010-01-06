@@ -1,0 +1,11 @@
+Installation Instructions
+=========================
+
+Make sure you have a QT4.4 develop environment (includes webkit) installed.
+
+To compile renda run
+
+qmake   # to generate the make files
+make    # to build the application
+
+
