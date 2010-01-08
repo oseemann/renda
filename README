@@ -9,3 +9,20 @@ See the COPYING file for copyright information.
 
 Author: Oliver Seemann <os (at) oebs.net>
 
+Running on a headless system
+----------------------------
+
+The program requires an X11 session. On a headless server you can start one
+using e.g. Xvfb. Make sure to select an unused display number:
+
+   $ Xvfb :1 -screen scrn 640x480x24
+
+The screen resolution has no effect on the rendering. The color depth does,
+however. Alternatively to Xfvb, you can use VNC:
+
+   $ vncserver :1 -depth 24 
+
+Use the -display switch to select the newly created X display:
+
+   $ renda -display :1 -i out.png http://www.google.com
+
